@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/yxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圆形图"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/yj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圆角:70p"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/kgb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宽高比:1.2"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/dt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载动图"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:viewAspectRatio="2.0"
+        android:layout_below="@+id/linear1"
+        android:layout_marginTop="10dp"
+        app:backgroundImage="@mipmap/ic_launcher"/>
+
+        <Button
+            android:id="@+id/zj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取注解的值"
+            android:layout_below="@+id/simple"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/fs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="反射添加集合"
+        android:layout_below="@+id/zj"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

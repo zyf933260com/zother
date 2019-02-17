@@ -1,0 +1,1 @@
+include ':app', ':day1fresco', ':day2fan', ':eventbus', ':zk1'
